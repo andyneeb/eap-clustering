@@ -38,7 +38,7 @@ $ oc delete pod eap-clustering-n-xyz
 
 Step 7: (Optional) Follow EAP log to see the new pod joining the cluster
 
-$ oc logs eap-clustering-m-abc
+$ oc logs eap-clustering-m-abc -f
 
 Step 8: HitRefresh link in the web page
 
