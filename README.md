@@ -36,7 +36,7 @@ Step 6: Kill the running container
 
 $ oc delete pod eap-clustering-n-xyz
 
-Step 7: (Optional) Follow EAP log to see the new pod joining the cluster
+Step 7: (Optional) Follow EAP log to see the new pod joining the cluster (or use GUI)
 
 $ oc logs eap-clustering-m-abc -f
 
