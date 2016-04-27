@@ -21,7 +21,7 @@ $ oc policy add-role-to-user view system:serviceaccount:$(oc project -q):default
 
 Step 3: Upload Template
 
-$ oc create -f <giturlgoeshere>
+$ oc create -f https://raw.githubusercontent.com/andyneeb/eap-clustering/master/openshift/eap-clustering.yaml
 
 Step 4: Launch Application (or use GUI)
 
