@@ -1,4 +1,4 @@
-Create a clustered JBoss EAP application with session replication
+Create a clustered JBoss EAP application with session replication on OpenShift
 ===================
 
 Session Replication
