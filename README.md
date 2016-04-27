@@ -19,31 +19,27 @@ Step 2: Provide EAP Access to Kubernetes API
 
 $ oc policy add-role-to-user view system:serviceaccount:$(oc project -q):default -n $(oc project -q)
 
-Step 3: Upload Template
+Step 3: Launch Application (or import template and use GUI)
 
-$ oc create -f https://raw.githubusercontent.com/andyneeb/eap-clustering/master/openshift/eap-clustering.yaml
+$ oc new-app -f https://raw.githubusercontent.com/andyneeb/eap-clustering/master/openshift/eap-clustering.yaml
 
-Step 4: Launch Application (or use GUI)
-
-$ oc new-app eap-clustering
-
-Step 5: Browse to the application itself, a route should have been created
+Step 4: Once Deployed, browse the application URL
 
 The web application displays the following information:
 - Session ID
 - Session counter and timestamp (these are variables stored in the session that are replicated)
 - The container name that the web page and session is being hosted from
 
-Step 6: Select the Increment Counter link
+Step 5: Select the Increment Counter link
 
-Step 7: Kill the running container
+Step 6: Kill the running container
 
-$ oc delete pod eap-clustering-<n-xyz>
+$ oc delete pod eap-clustering-n-xyz
 
-Step 8: Wait for replication controller to bring up another instance
+Step 7: (Optional) Follow EAP log to see the new pod joining the cluster
 
-Optional: Follow EAP (container) log to see the new pod joining the cluster 
+$ oc logs eap-clustering-m-abc
 
-Step 9: HitRefresh link in the web page
+Step 8: HitRefresh link in the web page
 
 You will see (after a short pause) the same web session being served up from a new container
