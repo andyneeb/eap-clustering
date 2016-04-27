@@ -6,7 +6,7 @@ metadata:
   annotations:
     description: A JBoss EAP clustering on OpenShift example.
     iconClass: icon-jboss
-    tags: instant-app,eap,javaee,java,jboss,xpaas
+    tags: instant-app,eap,java
   creationTimestamp: null
   name: eap-clustering
 objects:
