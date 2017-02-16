@@ -42,4 +42,4 @@ $ oc logs eap-clustering-m-abc -f
 
 Step 8: HitRefresh link in the web page
 
-You will see (after a short pause) the same web session being served up from a new container
+You will see the same web session being served up from a new container
