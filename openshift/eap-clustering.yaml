@@ -64,7 +64,7 @@ objects:
         forcePull: true
         from:
           kind: ImageStreamTag
-          name: jboss-eap64-openshift:1.2
+          name: jboss-eap64-openshift:1.4
           namespace: openshift
       type: Source
     triggers:
